@@ -1,0 +1,267 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+    
+ 
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 386px 396px 30px 256px;
+    grid-template-rows: 100px 309px 216px;
+    justify-content: center;
+    margin-bottom: 50px;
+    grid-template-areas:
+    
+    "caja1 caja1 caja1 caja1"
+    "caja2 caja2  caja3 caja3"
+    "caja4 caja5  caja3 caja3"
+    "caja6 caja7 caja8 caja8"
+    
+    ;
+
+}
+
+/* ------------------------------------------CAJA1 */
+
+.caja1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 5px;
+    grid-area: caja1;
+    ;
+    background-color: white;
+}
+
+.logo {
+    margin-left: -15px;
+    height: 35px;
+}
+
+.caja1-lista {
+
+    display: flex;
+    list-style: none;
+  
+}
+
+
+.caja1-lista a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 14px 20px;
+    margin-right: -10px;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+
+
+
+/* --------------------------------------------------CAJA2 */
+
+
+.caja2 {
+    grid-area: caja2;
+    
+}
+
+.imgHero {
+    max-width: 95%;
+    height: auto;
+}
+
+/* .imgHero {
+    height: 310px;
+    width: 748px;
+} */
+
+
+/* ---------------------------------------------------CAJA3 */
+
+.caja3 {
+    grid-area: caja3;
+    background-color: rgba(0, 0, 26, 1);
+    padding-left: 20px;
+    padding-right: 10px;
+
+    
+}
+
+.titulo-caja3 {
+    color: rgba(239, 173, 91, 1);
+    padding-top: 20px;
+    font-size: 2rem;
+  
+}
+
+.subtitulo-caja3 {
+    padding-top: 5px;
+    font-size: 1rem;
+    color: white;
+}
+
+.caja3 p {
+    color: rgba(171, 171, 194, 1);
+    font-size: 15px;
+    text-align: justify;
+}
+
+.divisor {
+   border: .2px solid rgb(151, 130, 130);
+   margin: 20px 0;
+}
+
+/* -------------------------------------------CAJA4 */
+
+.caja4 {
+    grid-area: caja4;
+   
+}
+
+H1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 25, 1);
+}
+
+
+
+/* ------------------------------------------CAJA5 */
+
+.caja5 {
+    grid-area: caja5;
+  
+}
+
+.parrafo-caja5 {
+    color: rgba(119, 118, 124, 1);
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+button {
+    background-color: rgba(241, 93, 81, 1);
+    color: rgba(50, 0, 6, 1);
+    border: none;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+button:hover {
+    transition: .7s;
+    background-color:rgba(0, 0, 26, 1);
+    color: white;
+}
+
+/* --------------------------------CAJAS INFERIORES */
+
+/* .cajas-inferiores {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "caja6 caja7 caja8";
+} */
+
+
+/* --------------------------------------CAJA6 */
+
+
+.caja6 {
+    display: flex;
+    grid-area: caja6;
+    color: gray;
+    font-size: 14px;
+    
+}
+
+.contenido-caja6 {
+    padding-left: 20px;
+}
+
+.img-caja6 {
+
+    padding-top: 20px;
+    height: 133px;
+    width: 106;
+}
+
+
+
+/* --------------------------------------CAJA7 */
+
+
+
+.caja7 {
+    display: flex;
+    grid-area: caja7;
+    color: gray;
+    font-size: 14px;
+}
+
+.contenido-caja7 {
+    padding-left: 20px;
+}
+
+.img-caja7 {
+
+    padding-top: 20px;
+    height: 133px;
+    width: 106;
+}
+
+
+
+
+/* ------------------------------CAJA8 */
+
+
+.caja8 {
+    display: flex;
+    grid-area: caja8;
+    color: gray;
+    font-size: 14px;
+}
+
+.contenido-caja8 {
+    padding-left: 20px;
+}
+
+.img-caja8 {
+
+    padding-top: 20px;
+    height: 133px;
+    width: 106;
+}
+
+.caja6 , .caja7 , .caja8 {
+    margin-top: 50px;
+}
+
+.caja6 .caja7 .caja8 , a {
+    text-decoration: none;
+    color: rgba(1, 0, 18, 1);
+}
+
+.caja6 .caja7 .caja8 , a:hover {
+ color: red;
+}
+
+h3 {
+    color: orange;
+    font-size: 20px;
+}
